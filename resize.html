@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Resize
+        </title>
+        <link href="css/resizee.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <form>
+          <div class="image">  <img src="/Images/sample3.jpeg" id="img" height="350px" width="350px"></div>
+           
+           <div class="content"> 
+            <h4>ENTER WIDTH IN PIXELS</h4>
+            <input type="text" id="widthinpx" oninput="reSize()">
+            <h4>ENTER WIDTH IN PERCENTAGE</h4>
+            <div><input type="text" id="widthin%" oninput="reSize()"></div>
+            <h4>ENTER HEIGHT IN PIXELS</h4>
+            <div><input type="text" id="heightinpx" oninput="reSize2()"></div>
+            <h4>ENTER WIDTH IN PERCENTAGE</h4>
+            <div><input type="text" id="heightin%" oninput="reSize2()"></div>
+            <H4>INSERT A LINK TO OPEN</H4>
+             <div><input type="text" id="link" onchange="openLink()"></div>
+             <h4>click here for new tab</h4>
+             <div><input type="checkbox"  id="checkbox" value="new tab" oninput="openLink()" ></div>
+            </div>
+             
+            
+
+
+        </form>
+
+        <script src="js/resize.js"></script>
+    </body>
+</html>
